@@ -1,0 +1,40 @@
+[character]
+# Switch to arrow for prompt
+# symbol = "➜"
+
+[username]
+# Always show username, even when user is local and non-root
+# show_always = true
+
+[hostname]
+# Always show hostname, even when host is local
+# ssh_only = false
+
+[directory]
+# Don't truncate directory paths
+truncation_length=0
+
+[git_status]
+# Enable status counts for all types of local files
+conflicted_count.enabled = true
+untracked_count.enabled = true
+stashed_count.enabled = true
+modified_count.enabled = true
+staged_count.enabled = true
+renamed_count.enabled = true
+deleted_count.enabled = true
+# Spacing between git status indicators
+conflicted	= " ="
+ahead	= " ⇡"
+behind	= " ⇣"
+diverged	= " ⇕"
+untracked	= " ?"
+stashed	= " $"
+modified	= " !"
+staged	= " +"
+renamed	= " »"
+deleted	= " ✘"
+prefix = "["
+suffix = " ]"
+# Show sync differences between local and remote
+show_sync_count = true
