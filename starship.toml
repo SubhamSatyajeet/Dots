@@ -24,16 +24,16 @@ staged_count.enabled = true
 renamed_count.enabled = true
 deleted_count.enabled = true
 # Spacing between git status indicators
-conflicted	= " ="
-ahead	= " ⇡"
-behind	= " ⇣"
-diverged	= " ⇕"
-untracked	= " ?"
-stashed	= " $"
-modified	= " !"
-staged	= " +"
-renamed	= " »"
-deleted	= " ✘"
+conflicted = " ="
+ahead = " ⇡"
+behind = " ⇣"
+diverged = " ⇕"
+untracked = " ?"
+stashed = " $"
+modified = " !"
+staged = " +"
+renamed = " »"
+deleted = " ✘"
 prefix = "["
 suffix = " ]"
 # Show sync differences between local and remote
