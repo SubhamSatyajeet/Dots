@@ -19,9 +19,6 @@ set laststatus=2
 " Visual autocomplete for command menu
 set wildmenu
 
-" Highlight current line
-" set cursorline
-
 " copy indent from current line when starting a new line
 set autoindent
 
@@ -31,8 +28,26 @@ set smartindent
 " Enable syntax highlighting
 syntax on
 
-" Enable filetype-based syntax highlighting, ftplugins, and indentation
-filetype plugin indent on
+" Enable search highlighting
+set hlsearch
+
+" Ignore case in search query
+set ignorecase
+
+" Don't ignore case when search query contains uppercase letter
+set smartcase
+
+" Don't show vim mode
+set noshowmode
+
+" Enable filetype detection
+filetype on
+
+" Enable filetype-specific plugins
+filetype plugin on
+
+" Enable filetype-specific indentation
+filetype indent on
 
 " Powerline status
 python3 from powerline.vim import setup as powerline_setup
