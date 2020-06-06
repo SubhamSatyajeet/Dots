@@ -1,7 +1,3 @@
-[character]
-# Switch to arrow for prompt
-# symbol = "➜"
-
 [username]
 # Always show username, even when user is local and non-root
 # show_always = true
