@@ -37,7 +37,7 @@ set ignorecase
 " Don't ignore case when search query contains uppercase letter
 set smartcase
 
-" Don't show vim mode
+" Don't show vim mode (Let Powerline handle vim mode)
 set noshowmode
 
 " Enable filetype detection
