@@ -43,7 +43,7 @@ syntax on
 " Enable search highlighting
 set hlsearch
 
-" Enable Incremental Search
+" Enable incremental search
 set incsearch
 
 " Ignore case in search query
@@ -52,7 +52,10 @@ set ignorecase
 " Don't ignore case when search query contains uppercase letter
 set smartcase
 
-" Don't show vim mode (Let Powerline handle vim mode)
+" Show commands typed into file
+set showcmd
+
+" Don't show vim mode (Let Powerline show vim mode)
 set noshowmode
 
 " Enable filetype detection
