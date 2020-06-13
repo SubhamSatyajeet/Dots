@@ -843,7 +843,7 @@ schemes:
   monokai_soda: &monokai_soda_dark
     primary:
       background: '#101010'
-      foreground: '#f0f0f0'
+      foreground: '#e8e8e8'
     normal:
       black:   '#101010'
       red:     '#f4005f'
@@ -852,7 +852,7 @@ schemes:
       blue:    '#9d65ff'
       magenta: '#f4005f'
       cyan:    '#58d1eb'
-      white:   '#f0f0f0'
+      white:   '#e8e8e8'
     bright:
       black:   '#625e4c'
       red:     '#f4005f'
@@ -861,7 +861,7 @@ schemes:
       blue:    '#9d65ff'
       magenta: '#f4005f'
       cyan:    '#58d1eb'
-      white:   '#f0f0f0'
+      white:   '#f6f6ef'
 
   new_moon: &new_moon
     primary:
