@@ -31,6 +31,6 @@ staged = " +"
 renamed = " »"
 deleted = " ✘"
 prefix = "["
-suffix = " ]"
+suffix = " ] "
 # Show sync differences between local and remote
 show_sync_count = true
