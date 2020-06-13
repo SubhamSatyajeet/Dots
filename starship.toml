@@ -1,16 +1,18 @@
 [username]
-# Always show username, even when user is local and non-root
+# Always show username
 # show_always = true
 
 [hostname]
-# Always show hostname, even when host is local
+# Always show hostname
 # ssh_only = false
 
 [directory]
-# Don't truncate directory paths
+# Show full directory paths
 truncation_length=0
 
 [git_status]
+# Show sync differences between local and remote
+show_sync_count = true
 # Enable all status counts
 conflicted_count.enabled = true
 untracked_count.enabled = true
@@ -32,5 +34,3 @@ renamed = " »"
 deleted = " ✘"
 prefix = "["
 suffix = " ] "
-# Show sync differences between local and remote
-show_sync_count = true
