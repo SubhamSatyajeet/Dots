@@ -1,6 +1,12 @@
 " Enable 256 colours
 set t_Co=256
 
+" Always show tabline
+set showtabline=2
+
+" Always show statusline
+set laststatus=2
+
 " Show line numbers
 set number
 
@@ -21,9 +27,6 @@ set showmatch
 
 " Show current position (line, column) of cursor
 set ruler
-
-" Show statusbar
-set laststatus=2
 
 " Use system clipboard
 set clipboard=unnamed
