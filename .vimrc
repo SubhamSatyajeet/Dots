@@ -1,6 +1,9 @@
 " Enable 256 colours
 set t_Co=256
 
+" Set the colorscheme
+colorscheme default
+
 " Always show tabline
 set showtabline=2
 
