@@ -19,10 +19,10 @@ set ttyfast
 " Highlight matching parentheses/brackets
 set showmatch
 
-" Show line/column number of current cursor position
+" Show current position (line, column) of cursor
 set ruler
 
-" Always show statusline
+" Show statusbar
 set laststatus=2
 
 " Use system clipboard
