@@ -1,3 +1,6 @@
+" Enable 256 colours
+set t_Co=256
+
 " Show line numbers
 set number
 
@@ -7,14 +10,23 @@ set wrap
 " Enable mouse support
 set mouse=a
 
+" Enable ttymouse support
+set ttymouse=sgr
+
+" Enable terminal acceleration
+set ttyfast
+
 " Highlight matching parentheses/brackets
 set showmatch
 
-" Show line/column number
+" Show line/column number of current cursor position
 set ruler
 
 " Always show statusline
 set laststatus=2
+
+" Use system clipboard
+set clipboard=unnamed
 
 " Visual autocomplete for command menu
 set wildmenu
@@ -30,6 +42,9 @@ syntax on
 
 " Enable search highlighting
 set hlsearch
+
+" Enable Incremental Search
+set incsearch
 
 " Ignore case in search query
 set ignorecase
