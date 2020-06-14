@@ -2,7 +2,7 @@
 set t_Co=256
 
 " Set the colorscheme
-colorscheme default
+colorscheme desert
 
 " Always show tabline
 set showtabline=2
@@ -61,7 +61,7 @@ set smartcase
 " Show commands typed into file
 set showcmd
 
-" Don't show vim mode (Let Powerline show vim mode)
+" Don't show vim mode
 set noshowmode
 
 " Enable filetype detection
@@ -73,7 +73,24 @@ filetype plugin on
 " Enable filetype-specific indentation
 filetype indent on
 
-" Powerline status
+" netrw configuration
+
+" Don't show banner
+let g:netrw_banner = 0
+
+" Use tree-style listing
+let g:netrw_liststyle = 3
+
+" Open files in new tabs
+let g:netrw_browse_split = 3
+
+" Width of tree browser in %age
+let g:netrw_winsize = 25
+
+" Hide files from tree browser
+let g:netrw_list_hide = &wildignore
+
+" Powerline
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
