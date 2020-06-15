@@ -1,8 +1,8 @@
 # Dots
 Personal configuration files (dotfiles) for shells, prompts, and other programs.
 
-- Alacritty terminal emulator
+- Alacritty
 - vim
 - tmux
 - fish shell
-- Starship prompt
+- Starship
