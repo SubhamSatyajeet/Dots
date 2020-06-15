@@ -2,7 +2,7 @@
 set t_Co=256
 
 " Set the colorscheme
-colorscheme desert
+colorscheme slate
 
 " Always show tabline
 set showtabline=2
@@ -15,6 +15,21 @@ set number
 
 " Enable word wrap
 set wrap
+
+" Tabs are 2 spaces wide
+set tabstop=2
+
+" Indents are 2 spaces wide
+set shiftwidth=2
+
+" Disable Soft Tabs
+set softtabstop=0
+
+" Enable Smart tab
+set smarttab
+
+" Don't convert tabs to spaces
+set noexpandtab
 
 " Enable mouse support
 set mouse=a
