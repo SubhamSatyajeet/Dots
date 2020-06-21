@@ -1,9 +1,6 @@
 " Enable 256 colours
 set t_Co=256
 
-" Set the colorscheme
-colorscheme slate
-
 " Always show tabline
 set showtabline=2
 
@@ -73,11 +70,11 @@ set ignorecase
 " Don't ignore case when search query contains uppercase letter
 set smartcase
 
-" Show commands typed into file
-set showcmd
+" Show/Hide partial commands
+set noshowcmd
 
-" Don't show vim mode
-set noshowmode
+" Show/Hide vim mode
+" set noshowmode
 
 " Enable filetype detection
 filetype on
@@ -88,24 +85,55 @@ filetype plugin on
 " Enable filetype-specific indentation
 filetype indent on
 
-" netrw configuration
+" netrw - don't show banner
+let g:netrw_banner=0
 
-" Don't show banner
-let g:netrw_banner = 0
+" netrw - tree-style listing
+let g:netrw_liststyle=3
 
-" Use tree-style listing
-let g:netrw_liststyle = 3
+" netrw - Open files in new tabs
+let g:netrw_browse_split=3
 
-" Open files in new tabs
-let g:netrw_browse_split = 3
+" netrw - Width of tree browser in %age
+let g:netrw_wvrsize=25
 
-" Width of tree browser in %age
-let g:netrw_winsize = 25
+" netrw - Hide files from tree browser
+let g:netrw_list_hide=&wildignore
 
-" Hide files from tree browser
-let g:netrw_list_hide = &wildignore
+" Set the colourscheme
+colorscheme slate
 
-" Powerline
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
+" Tabline colours
+highlight TabLine cterm=NONE ctermfg=White ctermbg=Black
+highlight TabLineFill cterm=NONE ctermfg=White ctermbg=Black
+highlight TabLineSel cterm=NONE ctermfg=White ctermbg=235
+
+" Statusline colours
+highlight StatusLine cterm=NONE ctermfg=White ctermbg=Black
+highlight StatusLineNC cterm=NONE ctermfg=White ctermbg=Black
+
+" Custom highlight settings
+highlight User1 ctermfg=White ctermbg=235
+highlight User2 ctermfg=White ctermbg=238
+
+" Custom Statusline
+set statusline=%1*							" Begin User1
+set statusline+=\ 
+set statusline+=%t      				" Tail of the filename
+set statusline+=\ 
+set statusline+=%h							" Help file flag
+set statusline+=%m							" Modified flag
+set statusline+=%r							" Readonly flag
+set statusline+=%y							" Filetype
+set statusline+=\ 
+set statusline+=%*							" End User1
+set statusline+=%=							" Separator
+set statusline+=%1*							" Begin User1
+set statusline+=\ 
+set statusline+=Column\ %c			" Column position of cursor
+set statusline+=\ 
+set statusline+=Line\ %l/%L			" Current line/total lines
+set statusline+=\ 
+set statusline+=%P							" %age through file
+set statusline+=\ 
+set statusline+=%*							" End User1
