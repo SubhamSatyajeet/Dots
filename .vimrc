@@ -104,9 +104,9 @@ let g:netrw_list_hide=&wildignore
 colorscheme slate
 
 " Tabline colours
-highlight TabLine cterm=NONE ctermfg=White ctermbg=Black
-highlight TabLineFill cterm=NONE ctermfg=White ctermbg=Black
 highlight TabLineSel cterm=NONE ctermfg=White ctermbg=235
+highlight TabLine cterm=NONE ctermfg=White ctermbg=234
+highlight TabLineFill cterm=NONE ctermfg=White ctermbg=Black
 
 " Statusline colours
 highlight StatusLine cterm=NONE ctermfg=White ctermbg=Black
@@ -114,25 +114,31 @@ highlight StatusLineNC cterm=NONE ctermfg=White ctermbg=Black
 
 " Custom highlight settings
 highlight User1 ctermfg=White ctermbg=235
-highlight User2 ctermfg=White ctermbg=238
+highlight User2 ctermfg=White ctermbg=234
 
 " Custom Statusline
 set statusline=%1*							" Begin User1
 set statusline+=\ 
 set statusline+=%t      				" Tail of the filename
 set statusline+=\ 
+set statusline+=%*								" End User1
+set statusline+=%2*							" Begin User2
+set statusline+=\ 
 set statusline+=%h							" Help file flag
 set statusline+=%m							" Modified flag
 set statusline+=%r							" Readonly flag
 set statusline+=%y							" Filetype
 set statusline+=\ 
-set statusline+=%*							" End User1
+set statusline+=%*							" End User2
 set statusline+=%=							" Separator
-set statusline+=%1*							" Begin User1
+set statusline+=%2*							" Begin User2
 set statusline+=\ 
-set statusline+=Column\ %c			" Column position of cursor
+set statusline+=Column\ %c,			" Column position of cursor
 set statusline+=\ 
 set statusline+=Line\ %l/%L			" Current line/total lines
+set statusline+=\ 
+set statusline+=%*							" End User2
+set statusline+=%1*							" Begin User1
 set statusline+=\ 
 set statusline+=%P							" %age through file
 set statusline+=\ 
