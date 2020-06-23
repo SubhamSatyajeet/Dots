@@ -25,8 +25,8 @@ set softtabstop=0
 " Enable Smart tab
 set smarttab
 
-" Don't convert tabs to spaces
-set noexpandtab
+" Enable/disable tabs to spaces conversion
+set expandtab
 
 " Enable mouse support
 set mouse=a
@@ -112,34 +112,34 @@ highlight TabLineFill cterm=NONE ctermfg=White ctermbg=Black
 highlight StatusLine cterm=NONE ctermfg=White ctermbg=Black
 highlight StatusLineNC cterm=NONE ctermfg=White ctermbg=Black
 
-" Custom highlight settings
+" Custom highlight colours
 highlight User1 ctermfg=White ctermbg=235
 highlight User2 ctermfg=White ctermbg=234
 
 " Custom Statusline
-set statusline=%1*							" Begin User1
+set statusline=%1*              " Begin User1
 set statusline+=\ 
-set statusline+=%t      				" Tail of the filename
+set statusline+=%t              " Filename
 set statusline+=\ 
-set statusline+=%*								" End User1
-set statusline+=%2*							" Begin User2
+set statusline+=%*              " End User1
+set statusline+=%2*             " Begin User2
 set statusline+=\ 
-set statusline+=%h							" Help file flag
-set statusline+=%m							" Modified flag
-set statusline+=%r							" Readonly flag
-set statusline+=%y							" Filetype
+set statusline+=%h              " Help file flag
+set statusline+=%m              " Modified flag
+set statusline+=%r              " Readonly flag
+set statusline+=%y              " Filetype
 set statusline+=\ 
-set statusline+=%*							" End User2
-set statusline+=%=							" Separator
-set statusline+=%2*							" Begin User2
+set statusline+=%*              " End User2
+set statusline+=%=              " Separator
+set statusline+=%2*             " Begin User2
 set statusline+=\ 
-set statusline+=Column\ %c,			" Column position of cursor
+set statusline+=Column\ %c,     " Column position of cursor
 set statusline+=\ 
-set statusline+=Line\ %l/%L			" Current line/total lines
+set statusline+=Line\ %l/%L     " Current line/total lines
 set statusline+=\ 
-set statusline+=%*							" End User2
-set statusline+=%1*							" Begin User1
+set statusline+=%*              " End User2
+set statusline+=%1*             " Begin User1
 set statusline+=\ 
-set statusline+=%P							" %age through file
+set statusline+=%P              " %age in file
 set statusline+=\ 
-set statusline+=%*							" End User1
+set statusline+=%*              " End User1
