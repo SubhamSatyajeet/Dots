@@ -11,7 +11,7 @@
 truncation_length=0
 
 [git_status]
-show_sync_count = true
+# Show counts for all status types
 conflicted = " =$count"
 ahead = " ⇡$count"
 behind = " ⇣$count"
