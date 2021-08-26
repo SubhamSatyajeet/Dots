@@ -26,7 +26,7 @@ set softtabstop=0
 set smarttab
 
 " Enable/disable tabs to spaces conversion
-set expandtab
+set noexpandtab
 
 " Enable mouse support
 set mouse=a
@@ -95,7 +95,7 @@ let g:netrw_liststyle=3
 let g:netrw_browse_split=3
 
 " netrw - Width of tree browser in %age
-let g:netrw_wvrsize=25
+let g:netrw_winsize=25
 
 " netrw - Hide files from tree browser
 let g:netrw_list_hide=&wildignore
