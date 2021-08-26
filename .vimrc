@@ -94,7 +94,7 @@ let g:netrw_liststyle=3
 " netrw - Open files in new tabs
 let g:netrw_browse_split=3
 
-" netrw - Width of tree browser in %age
+" netrw - Width of tree browser in percentage
 let g:netrw_winsize=25
 
 " netrw - Hide files from tree browser
