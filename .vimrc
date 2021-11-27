@@ -95,7 +95,7 @@ let g:netrw_liststyle=3
 let g:netrw_browse_split=3
 
 " netrw - Width of tree browser in percentage
-let g:netrw_winsize=25
+let g:netrw_winsize=30
 
 " netrw - Hide files from tree browser
 let g:netrw_list_hide=&wildignore
