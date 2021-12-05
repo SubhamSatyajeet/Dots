@@ -11,7 +11,7 @@
 truncation_length=0
 
 [git_status]
-# Show counts for all status types
+# Show counts for all status types, with spaces in between theem
 conflicted = " =$count"
 ahead = " ⇡$count"
 behind = " ⇣$count"
@@ -23,3 +23,11 @@ staged = " +$count"
 renamed = " »$count"
 deleted = " ✘$count"
 format = "[(\\[$all_status \\][ ](none))]($style)"
+
+[[battery.display]]
+# Set a higher threshold for battery status
+threshold = 25
+
+[git_metrics]
+# See number of lines changed across all tracked/untracked files since last commit in git repo
+disabled = false
