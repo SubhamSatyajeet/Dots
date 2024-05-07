@@ -1,8 +1,6 @@
 # Dots
-Personal configuration files (dotfiles) for shells, prompts, and other programs.
+Personal, minimal configuration files (dotfiles) for shells, prompts, and other programs.
 
-- Alacritty
 - vim
 - tmux
-- fish
 - Starship
