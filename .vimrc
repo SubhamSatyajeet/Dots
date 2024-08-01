@@ -101,7 +101,7 @@ let g:netrw_winsize=30
 let g:netrw_list_hide=&wildignore
 
 " Set the colourscheme
-colorscheme pablo
+" colorscheme pablo
 
 " Tabline colours
 highlight TabLineSel cterm=NONE ctermfg=White ctermbg=235
