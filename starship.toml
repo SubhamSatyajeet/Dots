@@ -28,17 +28,23 @@ disabled = true
 # Turn off language/tooling information
 [aws]
 disabled = true
+[buf]
+disabled = true
 [bun]
 disabled = true
 [c]
 disabled = true
 [cmake]
 disabled = true
+[cobol]
+disabled = true
 [conda]
 disabled = true
 [crystal]
 disabled = true
 [daml]
+disabled = true
+[dart]
 disabled = true
 [deno]
 disabled = true
@@ -52,11 +58,17 @@ disabled = true
 disabled = true
 [erlang]
 disabled = true
+[fennel]
+disabled = true
 [gcloud]
+disabled = true
+[gleam]
 disabled = true
 [golang]
 disabled = true
 [guix_shell]
+disabled = true
+[gradle]
 disabled = true
 [haskell]
 disabled = true
@@ -74,6 +86,10 @@ disabled = true
 disabled = true
 [meson]
 disabled = true
+[mojo]
+disabled = true
+[nats]
+disabled = true
 [nim]
 disabled = true
 [nix_shell]
@@ -82,15 +98,25 @@ disabled = true
 disabled = true
 [ocaml]
 disabled = true
+[odin]
+disabled = true
 [opa]
+disabled = true
+[openstack]
 disabled = true
 [perl]
 disabled = true
 [php]
 disabled = true
+[pixi]
+disabled = true
+[pulumi]
+disabled = true
 [purescript]
 disabled = true
 [python]
+disabled = true
+[quarto]
 disabled = true
 [raku]
 disabled = true
@@ -104,7 +130,11 @@ disabled = true
 disabled = true
 [scala]
 disabled = true
+[singularity]
+disabled = true
 [solidity]
+disabled = true
+[spack]
 disabled = true
 [swift]
 disabled = true
@@ -115,6 +145,8 @@ disabled = true
 [vagrant]
 disabled = true
 [vlang]
+disabled = true
+[vcsh]
 disabled = true
 [zig]
 disabled = true
