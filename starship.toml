@@ -84,6 +84,8 @@ disabled = true
 disabled = true
 [lua]
 disabled = true
+[maven]
+disabled = true
 [meson]
 disabled = true
 [mojo]
@@ -145,6 +147,8 @@ disabled = true
 [vagrant]
 disabled = true
 [vlang]
+disabled = true
+[vcs]
 disabled = true
 [vcsh]
 disabled = true
