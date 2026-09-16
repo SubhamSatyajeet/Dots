@@ -3,4 +3,5 @@ Personal, minimal configuration files (dotfiles) for shells, prompts, and other 
 
 - vim
 - tmux
+- Zellij
 - Starship
